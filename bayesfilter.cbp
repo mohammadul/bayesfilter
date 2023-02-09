@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="bayesfilter" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/bayesfilter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/bayesfilter" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../eigen3" />
+		</Compiler>
+		<Unit filename="include/bayesfilter.h" />
+		<Unit filename="include/common.h" />
+		<Unit filename="include/error.h" />
+		<Unit filename="include/extendedkalmanfilter.h" />
+		<Unit filename="include/kalmanfilter.h" />
+		<Unit filename="include/linearobservatory.h" />
+		<Unit filename="include/linearsystem.h" />
+		<Unit filename="include/observatory.h" />
+		<Unit filename="include/system.h" />
+		<Unit filename="src/bayesfilter.cpp" />
+		<Unit filename="src/error.cpp" />
+		<Unit filename="src/extendedkalmanfilter.cpp" />
+		<Unit filename="src/kalmanfilter.cpp" />
+		<Unit filename="src/linearobservatory.cpp" />
+		<Unit filename="src/linearsystem.cpp" />
+		<Unit filename="src/observatory.cpp" />
+		<Unit filename="src/system.cpp" />
+		<Unit filename="test/test.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
